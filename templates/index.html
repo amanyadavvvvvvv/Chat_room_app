@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Welcome to Chat Room</h1>
+            <p class="subtitle">Enter your username to start chatting</p>
+            <form action="/login" method="POST" class="login-form">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="username" 
+                        placeholder="Choose a username" 
+                        required
+                        minlength="3"
+                        maxlength="20"
+                        class="form-input"
+                    >
+                </div>
+                <button type="submit" class="btn-primary">Join Chat</button>
+            </form>
+            <div class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>💬 Real-time messaging</li>
+                    <li>🏠 Multiple chat rooms</li>
+                    <li>👥 See who's online</li>
+                    <li>🚀 Fast and responsive</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
